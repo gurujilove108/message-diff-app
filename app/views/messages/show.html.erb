@@ -1,2 +1,5 @@
-<span><%= @message.message_one %></span>
-<span><%= @message.message_two %></span>
+<div><%= @message.message_one %></div>
+<div><%= @message.message_two %></div>
+
+<%= link_to "Edit", edit_message_path(@message) %>
+

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+	<style>
+		.message-box {
+			border: 1 px solid silver;
+		}
+	</style>
     <title>DiffApp</title>
     <%= csrf_meta_tags %>
 
@@ -9,6 +15,8 @@
   </head>
 
   <body>
-    <%= yield %>
+  	<div class="container-fluid">
+    	<%= yield %>
+    </div>
   </body>
 </html>
