@@ -3,6 +3,7 @@
 <%= @messages.each do |message| %>
 	<span><%= message.message_one %></span>
 	<span><%= message.message_two %></span>
+	<%= link_to "View Differences", message_path(message), class: "btn btn-primary" %>
 	<br>
 <% end %>
 
