@@ -14,6 +14,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'pg'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+#gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri

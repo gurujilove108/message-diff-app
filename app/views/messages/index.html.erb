@@ -1,18 +1,21 @@
 
 <%= @messages.each do |message| %>
 	<div class="row">
-		<div class="col-md-6">
-			<div><%= message.message_one %></div>
+		<div class="col-md-6 message-border">
+			<div class="red-highlight"><%= message.message_one %></div>
 		</div>
-		<div class="col-md-6">
-			<div><%= message.message_two %></div>
+		<div class="col-md-6 message-border">
+			<div class="green-highlight"><%= message.message_two %></div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-3" text-left">
-			<%= link_to "View Differences", message_path(message), class: "btn btn-primary" %>
+			<%= link_to "View This", message_path(message), class: "btn btn-primary" %>
 		</div>
 	</div>
 <% end %>
-
-<%= link_to "New Message", new_message_path %>
+<div class="row">
+	<div class="col-md-3">
+		<%= link_to "Create New Comparison", new_message_path, class: "btn btn-danger" %>
+	</div>
+</div>

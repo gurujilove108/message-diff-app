@@ -1,5 +1,19 @@
-<div><%= @message.message_one %></div>
-<div><%= @message.message_two %></div>
+<div class="row">
+	<div class="col-md-6 message-border">
+		<div class="red-highlight"><%= @message.message_one %></div>
+	</div>
+	<div class="col-md-6 message-border">
+		<div class="green-highlight"><%= @message.message_two %></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-3">
+		<div><%= link_to "Back", root_path %></div>
+		<div><%= link_to "Edit", edit_message_path(@message) %></div>
+		<div><%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are you sure?"} %></div>
+	</div>
+</div>
 
-<%= link_to "Edit", edit_message_path(@message) %>
+
+
 
