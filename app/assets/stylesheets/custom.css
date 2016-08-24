@@ -1,0 +1,21 @@
+.message-border {
+	border: 1px groove silver;
+}
+
+.red-highlight {
+	background-color: red;
+	color: white;
+}
+
+.green-highlight {
+	background-color: #00b300;
+	color: white;
+}
+
+.new-message {
+	background: white;
+}
+
+.new-message:hover {
+	background: white;
+}
